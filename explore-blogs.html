@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Luxury</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/countrySelect.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="navbar-wrap d-flex justify-content-between align-items-center flex-wrap">
+                <a class="navbar-brand" href="index.html"><img src="./images/Hotel&Luxury.svg"
+                        alt="Hotel & Luxury" class="img-fluid" loading="lazy"></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" aria-current="page" href="destination.html"><i
+                                    class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Desitination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="hotels.html"><i class="fa-solid fa-bed me-1"
+                                    aria-hidden="true"></i>Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="explore.html"><i
+                                    class="fa-solid fa-file-lines me-1" aria-hidden="true"></i>Things to do</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="destination-tab.html">India</a></li>
+                                <li><a class="dropdown-item" href="explore-blogs.html">Blogs</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-end d-flex align-items-center mb-0 p-0">
+                        <li class="nav-end-list">
+                            <div class="country-nav me-2 me-md-4">
+                                <input id="country_selector" type="text" onchange="countryChange(this)">
+                            </div>
+                        </li>
+                        <!-- <li class="nav-end-list"><img
+                                src="https://ik.imagekit.io/syin0m2gb/man__2__i3ln6TXs17.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673501029262"
+                                alt="user" class="img-fluid w40 radius-100" loading="lazy"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero hero-dest mb-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="hero-desc">
+                                <div class="mb-3 hero-desc-searchform d-flex align-items-center">
+                                    <input type="email" class="form-control" id="placeSearch"
+                                        aria-describedby="placeSearch" placeholder="Where to?">
+                                    <a href="javascript:void(0)" class="hero-desc-searchform-icon">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Lorem</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="explore-blogs">
+                            <div class="explore-blogs-head pb-4 mb-4">
+                                <p class="font-14">July, 15, 2021 - <span class="text-uppercase">Things to do</span>
+                                    <span class="explore-blogs-head-time ms-3">3 min read</span>
+                                </p>
+                                <h1 class="font-700 mb-3">7 Amazing Places to Visit in North India during Winters</h1>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur. Tincidunt eleifend fermentum
+                                    pretium convallis tristique pellentesque rat.</p>
+                                <div class="explore-blogs-head-loc img-shadow">
+                                    <img src="./images/explore/penang.jpg" alt="penang"
+                                    class="img-fluid radius20 overflow-hidden" loading="lazy">
+                                    <p class="d-flex align-items-baseline justify-content-center text-white font-12 font-500 mb-0"><i class="fa-solid fa-location-dot d-block font-14 me-1 text-orange" aria-hidden="true"></i>Penang,
+                                        Malaysia</p>
+                                </div>
+                            </div>
+                            <div class="explore-blogs-intro mb-5">
+                                <h2>Introduction</h2>
+                                <p class="mb-4">India is home to a myriad of cultures and natural landscapes. The winter
+                                    season sees an influx of tourists eager to explore India's many beautiful
+                                    attractions; among them are the gorgeous snow-capped northern states. This region
+                                    has a one-of-a-kind appeal that draws people in from all corners of the globe. North
+                                    India is a top spot for winter vacations.</p>
+                                <p class="mb-4">From the snow-capped mountains of Shimla and Manali to the serene lakes
+                                    of Srinagar, there are plenty of breathtaking places to explore. And with
+                                    temperatures dipping below freezing in some parts of the region, you'll definitely
+                                    want to pack your warmest clothes! We have curated a list of the 7 amazing places to
+                                    visit in North India during the winter season.</p>
+                                <ul class="ps-3 num mb-4">
+                                    <li class="font-600 mb-2">Shimla</li>
+                                    <li class="font-600 mb-2">Manali</li>
+                                    <li class="font-600 mb-2">Dharamshala</li>
+                                    <li class="font-600 mb-2">Dalhousie</li>
+                                    <li class="font-600 mb-2">Srinagar</li>
+                                    <li class="font-600 mb-2">Leh-Ladakh</li>
+                                    <li class="font-600 mb-2">Nainital</li>
+                                </ul>
+                                <p class="">Lorem ipsum dolor sit amet consectetur. Lacus consectetur in dolor suspendisse maecenas tempor sit. Amet amet vitae elit faucibus urna mollis in integer tincidunt.</p>
+                            </div>
+                            <div class="explore-blogs-body">
+                                <ul class="num bold24">
+                                    <li class="mb-4">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                            <h4 class="font-700 mb-0">Content</h4>
+                                            <a href="javascript:void(0)" class="btn btn-outline-black">Read More</a>
+                                        </div>
+                                        <img src="./images/blogs/blog1.jpg" alt="blog1" class="img-fluid radius8 mb-3" loading="lazy">
+                                        <p class="mb-4">Shimla is the capital of the Indian state of Himachal Pradesh. The beautiful hill station is in the foothills of the Himalayas at an altitude of 2,206 meters (7,234 ft). It is one of the most popular tourist destinations in India. Shimla is known for its colonial architecture, which includes several Victorian-style buildings, such as the Viceregal Lodge, as well as the Mall Road and Christ Church. The city also has a number of temples and shrines, including the Jakhu Temple and the Sidh Baba ka Mandir.</p>
+                                        <p class="">In addition to its scenic beauty, Shimla is also a popular destination for adventure sports such as hiking, camping, and skiing. There are many things to do in this beautiful city. Another fantastic experience in town is the famed Kalka Shimla toy train trip; enjoy breathtaking scenic views along the way, and if you’re a thrill-seeker, Ice Skating is one of the best things to do in Shimla. You’ll be amazed by this picturesque city the moment you enter. It is definitely one of the best places to visit during winter.</p>
+                                    </li>
+                                    <li class="mb-4">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                            <h4 class="font-700 mb-0">Content</h4>
+                                            <a href="javascript:void(0)" class="btn btn-outline-black">Read More</a>
+                                        </div>
+                                        <img src="./images/blogs/blog1.jpg" alt="blog1" class="img-fluid radius8 mb-3" loading="lazy">
+                                        <p class="mb-4">Shimla is the capital of the Indian state of Himachal Pradesh. The beautiful hill station is in the foothills of the Himalayas at an altitude of 2,206 meters (7,234 ft). It is one of the most popular tourist destinations in India. Shimla is known for its colonial architecture, which includes several Victorian-style buildings, such as the Viceregal Lodge, as well as the Mall Road and Christ Church. The city also has a number of temples and shrines, including the Jakhu Temple and the Sidh Baba ka Mandir.</p>
+                                        <p class="">In addition to its scenic beauty, Shimla is also a popular destination for adventure sports such as hiking, camping, and skiing. There are many things to do in this beautiful city. Another fantastic experience in town is the famed Kalka Shimla toy train trip; enjoy breathtaking scenic views along the way, and if you’re a thrill-seeker, Ice Skating is one of the best things to do in Shimla. You’ll be amazed by this picturesque city the moment you enter. It is definitely one of the best places to visit during winter.</p>
+                                    </li>
+                                    <li class="mb-4">
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                            <h4 class="font-700 mb-0">Content</h4>
+                                            <a href="javascript:void(0)" class="btn btn-outline-black">Read More</a>
+                                        </div>
+                                        <img src="./images/blogs/blog1.jpg" alt="blog1" class="img-fluid radius8 mb-3" loading="lazy">
+                                        <p class="mb-4">Shimla is the capital of the Indian state of Himachal Pradesh. The beautiful hill station is in the foothills of the Himalayas at an altitude of 2,206 meters (7,234 ft). It is one of the most popular tourist destinations in India. Shimla is known for its colonial architecture, which includes several Victorian-style buildings, such as the Viceregal Lodge, as well as the Mall Road and Christ Church. The city also has a number of temples and shrines, including the Jakhu Temple and the Sidh Baba ka Mandir.</p>
+                                        <p class="">In addition to its scenic beauty, Shimla is also a popular destination for adventure sports such as hiking, camping, and skiing. There are many things to do in this beautiful city. Another fantastic experience in town is the famed Kalka Shimla toy train trip; enjoy breathtaking scenic views along the way, and if you’re a thrill-seeker, Ice Skating is one of the best things to do in Shimla. You’ll be amazed by this picturesque city the moment you enter. It is definitely one of the best places to visit during winter.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-sticky sticky">
+                            <div class="recentpost mb-5">
+                                <h4 class="shadow-card font-600 mb-4">Recent Post</h4>
+                                <div class="recentpost-cards mb-5">
+                                    <a href="javascript:void(0)" class="d-block text-black borderbottom-1x mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/georgia1.jpg" alt="georgia"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <p class="font-10 font-500 mb-0">September 01, 2023 - <span
+                                                        class="">Things to do</span></p>
+                                                <h6 class="text-ellipses font-500 mb-1">Finding Love & home in Tbilisi,
+                                                    Georgia</h6>
+                                                <p class="font-12 mb-2">Read more</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-block text-black borderbottom-1x mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/georgia2.jpg" alt="georgia"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <p class="font-10 font-500 mb-0">September 01, 2023 - <span
+                                                        class="">Things to do</span></p>
+                                                <h6 class="text-ellipses font-500 mb-1">Finding Love & home in Tbilisi,
+                                                    Georgia</h6>
+                                                <p class="font-12 mb-2">Read more</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-block text-black mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/georgia3.jpg" alt="georgia"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <p class="font-10 font-500 mb-0">September 01, 2023 - <span
+                                                        class="">Things to do</span></p>
+                                                <h6 class="text-ellipses font-500 mb-1">Finding Love & home in Tbilisi,
+                                                    Georgia</h6>
+                                                <p class="font-12 mb-2">Read more</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hotels-available">
+                                <h4 class="shadow-card font-600 mb-4">Hotels That I Have</h4>
+                                <div class="hotels-available-cards mb-5">
+                                    <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel1.jpg" alt="hotel1"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-1">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel2.jpg" alt="hotel2"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel3.jpg" alt="hotel3"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="javascript:void(0)" class="btn btn-outline-black">See more hotels</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app mb-5">
+                                <a href="javascript:void(0)" class="app-cta">
+                                    <img src="./images/destination/download_mobileapp.jpg" alt="Download Our Mobile App" class="img-fluid h250" loading="lazy">
+                                    <div class="app-cta-desc">
+                                        <h4 class="text-orange font-700">Download <span class="d-block">Our</span> Mobile App</h4>
+                                        <p class="font-14">Available for free on <span class="d-block">these
+                                                platforms</span></p>
+                                        <img src="./images/google_play.svg" alt="google play" class="img-fluid" loading="lazy">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="offers mb-50">
+                                <h4 class="shadow-card font-600 mb-4">Offers</h4>
+                                <a href="javascript:void(0)" class="offers-desc d-block">
+                                    <img src="./images/timmerman_hotel_resort.jpg" alt="Timmerman Hotel & Resort"
+                                        class="img-fluid" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="subscribe">
+                    <img src="./images/explore/subscribe.png" alt="subscribe" class="img-fluid" loading="lazy">
+                    <div class="subscribe-desc">
+                        <h2 class="mb-3">Subscribe to our newsletter</h2>
+                        <p class="font-500 mb-md-5">And receive weekly fresh articles on your favorite outdoor topics
+                        </p>
+                        <div class="subscribe-desc-topic d-flex flex-wrap mb-4">
+                            <span class="mb-3 mb-lg-0 me-3">Choose your topics</span>
+                            <ul class="d-flex flex-wrap mb-0 p-0">
+                                <li class="me-3">
+                                    <a href="javascript:void(0)" class="sub-btn btnblue">
+                                        hiking
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="javascript:void(0)" class="sub-btn btnred-outline">
+                                        fishing
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="javascript:void(0)" class="sub-btn btngreen-outline">
+                                        hunting
+                                    </a>
+                                </li>
+                                <li class="me-3">
+                                    <a href="javascript:void(0)" class="sub-btn btnorange-outline">
+                                        camping
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0)" class="sub-btn btnyellow-outline">
+                                        gear
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="subscribe-desc-form">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Enter Your Email"
+                                    aria-label="Enter Your Email" aria-describedby="email">
+                                <a href="javascript:void(0)" class="btn btn-main px-4" id="email">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between bottom-border mb-3 pb-3">
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-subscribe">
+                            <h6>Subscribe to Newsletter</h6>
+                            <div class="footer-subscribe-form mb-3">
+                                <label for="subscribeMail" class="form-label">Your email</label>
+                                <div class="footer-subscribe-form-input input-group align-items-center">
+                                    <input type="email" class="form-control" id="subscribeMail"
+                                        aria-describedby="emailHelp">
+                                    <a href="javascript:void(0)" class="d-flex align-items-center"><i
+                                            class="fa-solid fa-paper-plane" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-sm-6 col-md-3">
+                        <a href="javascript:void(0)"><img src="./images/Hotel&Luxury.svg" alt="hotel & luxury"
+                                class="img-fluid w190" loading="lazy"></a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-xl-2">
+                        <ul class="d-flex justify-content-sm-between justify-content-start footer-social flex-wrap mb-0 p-0">
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-paper-plane"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/countrySelect.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+
+</body>
+
+</html>

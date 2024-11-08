@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Luxury</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/countrySelect.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="navbar-wrap d-flex justify-content-between align-items-center flex-wrap">
+                <a class="navbar-brand" href="index.html"><img src="./images/Hotel&Luxury.svg"
+                        alt="Hotel & Luxury" class="img-fluid" loading="lazy"></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" aria-current="page" href="destination.html"><i
+                                    class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Desitination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="hotels.html"><i class="fa-solid fa-bed me-1"
+                                    aria-hidden="true"></i>Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="explore.html"><i
+                                    class="fa-solid fa-file-lines me-1" aria-hidden="true"></i>Things to do</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="destination-tab.html">India</a></li>
+                                <li><a class="dropdown-item" href="explore-blogs.html">Blogs</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-end d-flex align-items-center mb-0 p-0">
+                        <li class="nav-end-list">
+                            <div class="country-nav me-2 me-md-4">
+                                <input id="country_selector" type="text" onchange="countryChange(this)">
+                            </div>
+                        </li>
+                        <!-- <li class="nav-end-list"><img
+                                src="https://ik.imagekit.io/syin0m2gb/man__2__i3ln6TXs17.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673501029262"
+                                alt="user" class="img-fluid w40 radius-100" loading="lazy"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero mb-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="hero-desc">
+                                <img src="./images/7wonders.png" alt="7wonders" class="img-fluid" loading="lazy">
+                                <div class="mb-3 hero-desc-searchform d-flex align-items-center">
+                                    <input type="email" class="form-control" id="placeSearch"
+                                        aria-describedby="placeSearch" placeholder="Where to?">
+                                    <a href="javascript:void(0)" class="hero-desc-searchform-icon">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-9">
+                        <div class="destination mb-50">
+                            <h1 class="mb-3">Top Destinations For your Trips</h1>
+                            <p class="font-20 font-600 text-grey">Top Selling</p>
+                            <div class="destination-carousel arrow-carousel owl-carousel owl-theme">
+                                <div class="destination-carousel-slide">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Istanbul.jpg" alt="Istanbul" class="img-fluid" loading="lazy">
+                                                <h6>Istanbul, Turkey</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Sydney.jpg" alt="Sydney" class="img-fluid" loading="lazy">
+                                                <h6>Sydney, Australia</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Newyork.jpg" alt="Newyork" class="img-fluid" loading="lazy">
+                                                <h6>Newyork, USA</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/london.jpg" alt="london" class="img-fluid" loading="lazy">
+                                                <h6>London, England</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/lorem.jpg" alt="lorem" class="img-fluid" loading="lazy">
+                                                <h6>Lorem, Ipsum</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Agra.jpg" alt="Agra" class="img-fluid" loading="lazy">
+                                                <h6>Agra, India</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="destination-carousel-slide">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Istanbul.jpg" alt="Istanbul" class="img-fluid" loading="lazy">
+                                                <h6>Istanbul, Turkey</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Sydney.jpg" alt="Sydney" class="img-fluid" loading="lazy">
+                                                <h6>Sydney, Australia</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Newyork.jpg" alt="Newyork" class="img-fluid" loading="lazy">
+                                                <h6>Newyork, USA</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/london.jpg" alt="london" class="img-fluid" loading="lazy">
+                                                <h6>London, England</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/lorem.jpg" alt="lorem" class="img-fluid" loading="lazy">
+                                                <h6>Lorem, Ipsum</h6>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="destination-carousel-slide-cta img-shadow">
+                                                <img src="./images/Agra.jpg" alt="Agra" class="img-fluid" loading="lazy">
+                                                <h6>Agra, India</h6>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inspiration mb-50">
+                            <h2 class="mb-3">Inspiration for outing</h2>
+                            <p class="text-green mb-4">Search Places Hire to our most popular destinations</p>
+                            <ul class="nav inspiration-carousel owl-carousel owl-theme mb-4" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab"
+                                        data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1"
+                                        aria-selected="true">
+                                        <div class="inspiration-carousel-slide">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row g-0 align-items-center">
+                                                        <div class="col-4 mb-3 mb-md-0">
+                                                            <img src="./images/instanbul_turkey.jpg"
+                                                                alt="instanbul turkey" class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="col-8 ps-3">
+                                                            <div class="inspiration-carousel-slide-desc">
+                                                                <h6 class="text-green font-600">Istanbul, Turkey</h6>
+                                                                <p
+                                                                    class="text-green font-500 d-flex align-items-center flex-wrap mb-0">
+                                                                    Travel <span class="dot">Hotels</span> Resorts</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2"
+                                        type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                        <div class="inspiration-carousel-slide">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row g-0 align-items-center">
+                                                        <div class="col-4 mb-3 mb-md-0">
+                                                            <img src="./images/sydney_australia.jpg"
+                                                                alt="sydney australia" class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="col-8 ps-3">
+                                                            <div class="inspiration-carousel-slide-desc">
+                                                                <h6 class="text-green font-600">Sydney, Australia</h6>
+                                                                <p
+                                                                    class="text-green font-500 d-flex align-items-center flex-wrap mb-0">
+                                                                    Travel <span class="dot">Hotels</span> Resorts</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3"
+                                        type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                                        <div class="inspiration-carousel-slide">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row g-0 align-items-center">
+                                                        <div class="col-4 mb-3 mb-md-0">
+                                                            <img src="./images/london.jpg" alt="instanbul turkey"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="col-8 ps-3">
+                                                            <div class="inspiration-carousel-slide-desc">
+                                                                <h6 class="text-green font-600">Istanbul, Turkey</h6>
+                                                                <p
+                                                                    class="text-green font-500 d-flex align-items-center flex-wrap mb-0">
+                                                                    Travel <span class="dot">Hotels</span> Resorts</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="inspTab">
+                                <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                                    aria-labelledby="tab1-tab">
+                                    <div class="inspirationtab1">
+                                        <img src="./images/tab_content_img1.jpg" alt="dummy"
+                                            class="img-fluid w-100 img-mob" loading="lazy">
+                                        <div class="inspirationtab1-desc">
+                                            <p class="font-12">September 17, 2021 - Things to do</p>
+                                            <h6 class="font-700">Lorem ipsum dolor</h6>
+                                            <p class="mb-lg-4">Lorem ipsum dolor sit amet consectetur. Amet egestas
+                                                quisque
+                                                amet nec. Aliquet lectus pellentesque mauris sollicitudin lorem lacus.
+                                                Vulputate et odio tempus quis eu sagittis ut.</p>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="font-12 mb-0">12 Min Read</p>
+                                                <a href="javascript:void(0)" class="font-14 readfull">Read Full <i
+                                                        class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                                    <h4>tab2</h4>
+                                </div>
+                                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                                    <h4>tab3</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trekking mb-50">
+                            <h2 class="text-uppercase font-700 mb-4"><span class="stroke">we provide</span> best
+                                trekking to your journal</h2>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="trekking-card img-shadow">
+                                        <img src="./images/melbourne.jpg" alt="melbourne" class="img-fluid" loading="lazy">
+                                        <div class="trekking-card-desc w-100">
+                                            <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                                <h4 class="font-600"><span class="text-ellipses w160 d-block">Melbourne</span> <span class="d-block font-14 font-400">An
+                                                        amazing journey</span></h4>
+                                                <span class="d-block font-24 font-600 text-nowrap">$ 700</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn btn-main w-100">Book a Hotel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="trekking-card img-shadow">
+                                        <img src="./images/paris.jpg" alt="paris" class="img-fluid" loading="lazy">
+                                        <div class="trekking-card-desc w-100">
+                                            <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                                <h4 class="font-600"><span class="text-ellipses w160 d-block">Paris</span> <span class="d-block font-14 font-400">A
+                                                        Paris Adventure</span></h4>
+                                                <span class="d-block font-24 font-600 text-nowrap">$ 600</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn btn-main w-100">Book a Hotel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="trekking-card img-shadow">
+                                        <img src="./images/london_eye_adventure.jpg" alt="london" class="img-fluid" loading="lazy">
+                                        <div class="trekking-card-desc w-100">
+                                            <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+                                                <h4 class="font-600">London <span
+                                                        class="d-block font-14 font-400">London eye adventure</span>
+                                                </h4>
+                                                <span class="d-block font-24 font-600 text-nowrap">$ 350</span>
+                                            </div>
+                                            <a href="javascript:void(0)" class="btn btn-main w-100">Book a Hotel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summer-breaks mb-50">
+                            <a href="javascript:void(0)" class="img-shadow">
+                                <img src="./images/summer_breaks.jpg" alt="for unforgettable summer breaks"
+                                    class="img-fluid img-mob" loading="lazy">
+                                <div class="sponsored font-12 font-500">
+                                    Sponsored
+                                </div>
+                                <div class="summer-breaks-desc w-100">
+                                    <h4 class="text-center bg-white py-3 font-600 text-uppercase text-black mb-3">For
+                                        unforgettable
+                                        Summer breaks</h4>
+                                    <div class="summer-breaks-desc-offer text-white">
+                                        <h5 class="font-700 mb-3 text-uppercase">Up to 50% off*</h5>
+                                        <p class="font-24 font-300 mb-0">with Mega Godzilla Sale, Especially for You</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="siteintro mb-50">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card radius8 rounded-bottom overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="row g-0">
+                                                <div class="col-lg-6">
+                                                    <div class="siteintro-left p-4">
+                                                        <h6 class="font-600 text-uppercase">Introducing</h6>
+                                                        <h2 class="mb-4">Hotel & Luxury</h2>
+                                                        <p>Lorem ipsum dolor sit amet, consectelorem ipsum dolor sit
+                                                            amet,
+                                                            consectetuer adipiscing elit, sed Orem ipsum dolor sit amet,
+                                                            consectelorem ipsum dolor sit consectetuer adipiscing.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="siteintro-right owl-carousel owl-theme">
+                                                        <div class="siteintro-right-slide">
+                                                            <img src="./images/hotel_intro.jpg" alt="Hotel & Luxury"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="siteintro-right-slide">
+                                                            <img src="./images/hotel_intro1.jpg" alt="Hotel & Luxury"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="siteintro-right-slide">
+                                                            <img src="./images/hotel_intro2.jpg" alt="Hotel & Luxury"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="siteintro-right-slide">
+                                                            <img src="./images/hotel_intro3.jpg" alt="Hotel & Luxury"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="siteintro-right-slide">
+                                                            <img src="./images/hotel_intro4.jpg" alt="Hotel & Luxury"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                        <div class="siteintro-right-slide">
+                                                            <img src="./images/hotel_intro5.jpg" alt="Hotel & Luxury"
+                                                                class="img-fluid" loading="lazy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row g-0">
+                                                <div class="col-md-6">
+                                                    <div class="siteintro-btn">
+                                                        <a href="javascript:void(0)" class="siteintro-btn-places">Best
+                                                            Saving budget luxury Places</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="siteintro-btn">
+                                                        <a href="javascript:void(0)" class="siteintro-btn-hotels">Best
+                                                            Saving budget luxury hotels</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events mb-50">
+                            <h2 class="mb-0">events</h2>
+                            <h2 class="events-subtitle mb-4">Personalized, one-of-a-kind Events.</h2>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="events-wrap position-relative">
+                                        <img src="./images/meeting_conferences.jpg" alt="Meetings & Conferences"
+                                            class="img-fluid" loading="lazy">
+                                        <div class="events-wrap-desc pb-3">
+                                            <div class="events-wrap-desc-block">
+                                                <h6 class="font-12 mb-0">HIGHLIGHTS</h6>
+                                            </div>
+                                            <h5 class="mb-3">Meetings & Conferences</h5>
+                                            <a href="javascript:void(0)"
+                                                class="events-wrap-desc-cta d-flex align-items-center justify-content-center">explore
+                                                more <i class="fa-solid fa-arrow-right-long ms-1"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <img src="./images/weddings.jpg" alt="weddings" class="img-fluid" loading="lazy">
+                                    <div class="events-wrap-desc pb-3">
+                                        <div class="events-wrap-desc-block">
+                                            <h6 class="font-12 mb-0">HIGHLIGHTS</h6>
+                                        </div>
+                                        <h5 class="mb-3">weddings</h5>
+                                        <a href="javascript:void(0)"
+                                            class="events-wrap-desc-cta d-flex align-items-center justify-content-center">explore
+                                            more <i class="fa-solid fa-arrow-right-long ms-1"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <img src="./images/venues.jpg" alt="venues" class="img-fluid" loading="lazy">
+                                    <div class="events-wrap-desc pb-3">
+                                        <div class="events-wrap-desc-block">
+                                            <h6 class="font-12 mb-0">HIGHLIGHTS</h6>
+                                        </div>
+                                        <h5 class="mb-3">Venues</h5>
+                                        <a href="javascript:void(0)"
+                                            class="events-wrap-desc-cta d-flex align-items-center justify-content-center">explore
+                                            more <i class="fa-solid fa-arrow-right-long ms-1"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="vibe">
+                            <h2>Pick A Vibe and explore the top destination</h2>
+                            <p class="text-green mb-3">quick and easy trip planner</p>
+                            <div class="vibe-carousel owl-carousel owl-theme">
+                                <img class="item" src="http://placehold.it/320x240?text=yo" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%201" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%202" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%203" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%204" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%205" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%206" loading="lazy">
+                                <img class="item" src="http://placehold.it/320x240?text=Slide%207" loading="lazy">
+                              </div>
+                        </div> -->
+                        <div class="interdestination mb-5">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="interdestination-desc">
+                                        <h2 class="mb-3">Top International destinations for next trip</h2>
+                                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex justify-content-md-end align-items-center">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more places</a>
+                                </div>
+                            </div>
+                            <div class="interdestination-card">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/maldives.jpg" alt="maldives" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Maldives</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/germany.jpg" alt="germany" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Germany</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/usa.jpg" alt="usa" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lake
+                                                        Tahoe USA</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interdestination mb-5">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="interdestination-desc">
+                                        <h2 class="mb-3">Top Domestic destinations for next trip</h2>
+                                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more places</a>
+                                </div>
+                            </div>
+                            <div class="interdestination-card">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/goa.jpg" alt="goa" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Goa</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/jaipur.jpg" alt="jaipur" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Jaipur,
+                                                        Rajasthan</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/kerala.jpg" alt="kerala" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Kerala</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interdestination mb-5">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="interdestination-desc">
+                                        <h2 class="mb-3">Top Places in the Most popular regions</h2>
+                                        <p class="mb-md-0">Find location in the most visiting places</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more places</a>
+                                </div>
+                            </div>
+                            <div class="interdestination-card">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/lorem1.jpg" alt="Lorem Ipsum" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Ipsum</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/lorem2.jpg" alt="Lorem Ipsum" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Ipsum</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/lorem3.jpg" alt="Lorem Ipsum" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Lorem,
+                                                        Ipsum</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interdestination mb-5">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="interdestination-desc">
+                                        <h2 class="mb-3">Top Places in the Most popular regions</h2>
+                                        <p class="mb-md-0">Find location in the most visiting places</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more places</a>
+                                </div>
+                            </div>
+                            <div class="interdestination-card">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/halong_vietnam.jpg" alt="Halong Bay Vietnam"
+                                                    class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Halong
+                                                        Bay, Vietnam</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/santorini_greece.jpg" alt="Santorini Greece"
+                                                    class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Santorini,
+                                                        Greece</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/havana_cuba.jpg" alt="Havana Cuba" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="interdestination-card-desc d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Havana,
+                                                        Cuba</h6>
+                                                    <a href="javascript:void(0)" class="btn btn-main">Find Hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="downloadapp radius8 overflow-hidden mb-5">
+                            <picture>
+                                <source media="(min-width:768px)" srcset="./images/download_app.jpg">
+                                <source media="(max-width:767px)" srcset="./images/download_app_mob.jpg">
+                                <img src="./images/download_app.jpg" alt="download app now" class="img-fluid img-mob w-100" loading="lazy">
+                            </picture>
+                            <div class="downloadapp-desc">
+                                <h3 class="mb-3">Download App <span class="d-block d-md-inline">Now!</span></h3>
+                                <p class="mb-3 mb-lg-5">Available for free on <span class="d-block d-md-inline">these platforms</span></p>
+                                <!-- <div class="downloadapp-desc-form input-group mb-2 md-lg-5">
+                                    <div class="country-mob d-flex">
+                                        <input id="country_selector-mobno" type="text" onchange="countryChange(this)">
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Enter Mobile Number"
+                                        aria-label="Enter Mobile Number" aria-describedby="btnMain">
+                                    <a href="javascript:void(0)" class="btn btn-main" id="btnMain">Get APP Link</a>
+                                </div> -->
+                                <ul class="downloadapp-desc-link p-0">
+                                    <li class="me-3"><a href="javascript:void(0)"><img src="./images/google_play.svg" alt="google play" class="img-fluid" loading="lazy"></a></li>
+                                    <li class=""><a href="javascript:void(0)"><img src="./images/app_qr.svg" alt="app qr code" class="img-fluid" loading="lazy"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="popular-region mb-5">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="popular-region-desc">
+                                        <h2 class="mb-3">Hotels in the Most popular regions</h2>
+                                        <p class="mb-md-0">Find location in the most visiting places</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more hotels</a>
+                                </div>
+                            </div>
+                            <div class="popular-region-card">
+                                <div class="row">
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/popularhotels1.jpg" alt="100 Smart Street, LA, USA"
+                                                    class="img-fluid" loading="lazy">
+                                                <div class="popular-region-card-action">
+                                                    <!-- <i class="fa fa-heart" aria-hidden="true"></i> -->
+                                                    <h6 class="popular-region-card-action-price font-600">$ 1000 - 5000
+                                                        USD</h6>
+                                                </div>
+                                                <div class="popular-region-card-desc p-3 pt-0">
+                                                    <h6 class="font-600 mb-0">Well Furnished Apartment</h6>
+                                                    <p class="font-14 mb-4">100 Smart Street, LA, USA</p>
+                                                    <a href="javascript:void(0)" class="btn btn-main w-100">Check
+                                                        Rates</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/popularhotels2.jpg" alt="100 Smart Street, LA, USA"
+                                                    class="img-fluid" loading="lazy">
+                                                <div class="popular-region-card-action">
+                                                    <h6 class="popular-region-card-action-price font-600">$ 1000 - 5000
+                                                        USD</h6>
+                                                </div>
+                                                <div class="popular-region-card-desc p-3 pt-0">
+                                                    <h6 class="font-600 mb-0">Well Furnished Apartment</h6>
+                                                    <p class="font-14 mb-4">100 Smart Street, LA, USA</p>
+                                                    <a href="javascript:void(0)" class="btn btn-main w-100">Check
+                                                        Rates</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card radius8 overflow-hidden">
+                                            <div class="card-body p-0">
+                                                <img src="./images/popularhotels3.jpg" alt="100 Smart Street, LA, USA"
+                                                    class="img-fluid" loading="lazy">
+                                                <div class="popular-region-card-action">
+                                                    <!-- <i class="fa fa-heart" aria-hidden="true"></i> -->
+                                                    <img src="./images/guest_fav.png" alt="guest favourite"
+                                                        class="img-fluid popular-region-card-action-guestfav" loading="lazy">
+                                                    <!-- <h6 class="popular-region-card-action-guestfav font-300">Guest Favorite</h6> -->
+                                                    <h6 class="popular-region-card-action-price font-600">$ 1000 - 5000
+                                                        USD</h6>
+                                                </div>
+                                                <div class="popular-region-card-desc p-3 pt-0">
+                                                    <h6 class="font-600 mb-0">Well Furnished Apartment</h6>
+                                                    <p class="font-14 mb-4">100 Smart Street, LA, USA</p>
+                                                    <a href="javascript:void(0)" class="btn btn-main w-100">Check
+                                                        Rates</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our-blog mb-4 mb-md-5">
+                            <div class="row mb-4">
+                                <div class="col-md-10">
+                                    <div class="our-blog-title">
+                                        <h2 class="mb-3">Our Blog</h2>
+                                        <p class="mb-md-0">Going somewhere to celebrate this season? Whether you’re
+                                            going
+                                            home or somewhere to roam, we’ve got the travel tools to get you to your
+                                            destination.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-md-end align-items-center">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See All</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <a href="javascript:void(0)" class="our-blog-left img-shadow">
+                                        <img src="./images/OurBlog.jpg" alt="sri lanka" class="img-fluid" loading="lazy">
+                                        <div class="our-blog-left-wrap our-blog-desc text-white">
+                                            <p class="left-bdr mb-1 font-12">July, 15, 2021 - Things to do</p>
+                                            <h2>Backpacking <span class="d-md-block">Sri Lanka</span></h2>
+                                            <p class="d-flex align-items-baseline font-12"><i
+                                                    class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                    aria-hidden="true"></i>Penang,
+                                                Malaysia </p>
+                                        </div>
+                                        <div class="our-blog-left-wrap our-blog-hover text-white">
+                                            <h2 class="mb-3">Backpacking <span class="d-block">Sri Lanka</span></h2>
+                                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur. Eget diam lacus
+                                                vitae fringilla facilisi hendrerit. Dignissim ut feugiat tempus enim
+                                                tempus integer. Vestibulum adipiscing sit ornare mauris imperdiet proin.
+                                            </p>
+                                            <p class="d-flex justify-content-between mb-3 font-12"><span
+                                                    class="font-600">By Grace Geller</span> <span>July 30. 2023</span>
+                                            </p>
+                                            <span class="btn btn-white w-100">Read More</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="our-blog-right position-relative img-shadow">
+                                                <img src="./images/guide1.jpg" alt="guide1" class="img-fluid" loading="lazy">
+                                                <div class="our-blog-right-wrap our-blog-desc text-white">
+                                                    <p class="left-bdr mb-1 font-12">July, 15, 2021 - Things to do
+                                                    </p>
+                                                    <h6>A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex align-items-baseline font-12"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Penang,
+                                                        Malaysia</p>
+                                                </div>
+                                                <div class="our-blog-right-wrap our-blog-hover text-white">
+                                                    <h6 class="mb-3">A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex justify-content-between mb-3 font-12"><span
+                                                            class="font-600">By Grace Geller</span><span>July 30.
+                                                            2023</span></p>
+                                                    <span class="btn btn-white w-100">Read More</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="our-blog-right position-relative img-shadow">
+                                                <img src="./images/guide2.jpg" alt="guide2" class="img-fluid" loading="lazy">
+                                                <div class="our-blog-right-wrap our-blog-desc text-white">
+                                                    <p class="left-bdr mb-1 font-12">July, 15, 2021 - Things to do
+                                                    </p>
+                                                    <h6>A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex align-items-baseline font-12"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Penang,
+                                                        Malaysia</p>
+                                                </div>
+                                                <div class="our-blog-right-wrap our-blog-hover text-white">
+                                                    <h6 class="mb-3">A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex justify-content-between mb-3 font-12"><span
+                                                            class="font-600">By Grace Geller</span><span>July 30.
+                                                            2023</span></p>
+                                                    <span class="btn btn-white w-100">Read More</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="our-blog-right position-relative img-shadow">
+                                                <img src="./images/guide3.jpg" alt="guide3" class="img-fluid" loading="lazy">
+                                                <div class="our-blog-right-wrap our-blog-desc text-white">
+                                                    <p class="left-bdr mb-1 font-12">July, 15, 2021 - Things to do
+                                                    </p>
+                                                    <h6>A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex align-items-baseline font-12"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Penang,
+                                                        Malaysia</p>
+                                                </div>
+                                                <div class="our-blog-right-wrap our-blog-hover text-white">
+                                                    <h6 class="mb-3">A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex justify-content-between mb-3 font-12"><span
+                                                            class="font-600">By Grace Geller</span><span>July 30.
+                                                            2023</span></p>
+                                                    <span class="btn btn-white w-100">Read More</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <a href="javascript:void(0)"
+                                                class="our-blog-right position-relative img-shadow">
+                                                <img src="./images/guide4.jpg" alt="guide4" class="img-fluid" loading="lazy">
+                                                <div class="our-blog-right-wrap our-blog-desc text-white">
+                                                    <p class="left-bdr mb-1 font-12">July, 15, 2021 - Things to do
+                                                    </p>
+                                                    <h6>A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex align-items-baseline font-12"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Penang,
+                                                        Malaysia</p>
+                                                </div>
+                                                <div class="our-blog-right-wrap our-blog-hover text-white">
+                                                    <h6 class="mb-3">A traveler’s guide to Penang</h6>
+                                                    <p class="d-flex justify-content-between mb-3 font-12"><span
+                                                            class="font-600">By Grace Geller</span><span>July 30.
+                                                            2023</span></p>
+                                                    <span class="btn btn-white w-100">Read More</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-searches mb-5">
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <h5 class="mb-3 font-700">More popular searches</h5>
+                                    <div class="card radius8">
+                                        <div class="card-body pb-0">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <ul class="p-0 mb-0">
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Manali
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Kolkata
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Pune
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Varanasi
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Mysore
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Lonavala
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Lucknow
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Gurgaon
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Manali
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Kolkata
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Pune
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Varanasi
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-center">
+                                                    <ul class="p-0 mb-0">
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Hyderabad
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Dubai
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Puri
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Munnar
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Chennai
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Shimla
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Ahmedabad
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Amritsar
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Hyderabad
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Dubai
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Puri
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <h5 class="mb-3 font-700">International Sites</h5>
+                                    <div class="card radius8">
+                                        <div class="card-body pb-0">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <ul class="p-0 mb-0">
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem UAE
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Österreich
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem België
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Brasil
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Schweiz
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Colombia
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Deutschland
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                Hotels in Ecuador
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem UAE
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Österreich
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem België
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6 d-flex justify-content-center">
+                                                    <ul class="p-0 mb-0">
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Argentina
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Australia
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem България
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Canada
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Chile
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Česko
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Argentina
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem Australia
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <a href="javascript:void(0)"
+                                                                class="font-14 font-700 text-dark">
+                                                                lorem България
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-sticky sticky">
+                            <div class="most-popular mb-50">
+                                <h4 class="shadow-card font-600 mb-4">Most Popular</h4>
+                                <div class="most-popular-carousel owl-carousel owl-theme">
+                                    <a href="javascript:void(0)" class="most-popular-desc d-block">
+                                        <img src="./images/most_popular.jpg" alt="most popular" class="img-fluid" loading="lazy">
+                                        <div class="most-popular-desc-block text-white">
+                                            <p class="left-bdr mb-1 font-12">July, 15, 2021 - <span
+                                                    class="text-uppercase">Things to do</span></p>
+                                            <h6>A traveler’s guide to Penang</h6>
+                                            <p class="d-flex align-items-baseline font-12"><i
+                                                    class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                    aria-hidden="true"></i>Penang,
+                                                Malaysia</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="most-popular-desc d-block">
+                                        <img src="./images/most_popular.jpg" alt="most popular" class="img-fluid" loading="lazy">
+                                        <div class="most-popular-desc-block text-white">
+                                            <p class="left-bdr mb-1 font-12">July, 15, 2021 - <span
+                                                    class="text-uppercase">Things to do</span></p>
+                                            <h6>A traveler’s guide to Penang</h6>
+                                            <p class="d-flex align-items-baseline font-12"><i
+                                                    class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                    aria-hidden="true"></i>Penang,
+                                                Malaysia</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="recentpost mb-5">
+                                <h4 class="shadow-card font-600 mb-4">Recent Post</h4>
+                                <div class="recentpost-cards mb-5">
+                                    <a href="javascript:void(0)" class="d-block text-black borderbottom-1x mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/georgia1.jpg" alt="georgia"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <p class="font-10 font-500 mb-0">September 01, 2023 - <span
+                                                        class="">Things to do</span></p>
+                                                <h6 class="text-ellipses font-500 mb-1">Finding Love & home in Tbilisi,
+                                                    Georgia</h6>
+                                                <p class="font-12 mb-2">Read more</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-block text-black borderbottom-1x mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/georgia2.jpg" alt="georgia"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <p class="font-10 font-500 mb-0">September 01, 2023 - <span
+                                                        class="">Things to do</span></p>
+                                                <h6 class="text-ellipses font-500 mb-1">Finding Love & home in Tbilisi,
+                                                    Georgia</h6>
+                                                <p class="font-12 mb-2">Read more</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-block text-black mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/georgia3.jpg" alt="georgia"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <p class="font-10 font-500 mb-0">September 01, 2023 - <span
+                                                        class="">Things to do</span></p>
+                                                <h6 class="text-ellipses font-500 mb-1">Finding Love & home in Tbilisi,
+                                                    Georgia</h6>
+                                                <p class="font-12 mb-2">Read more</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div
+                                    class="recentpost-details d-flex flex-column align-items-center shadow-card text-start">
+                                    <h4 class="font-700 mb-4">Lorem ipsum dolor sit?</h4>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet <span class="d-lg-block">consectetur.
+                                            Praesent amet</span> ipsum urna nunc natoque.</p>
+                                    <a href="javascript:void(0)" class="btn btn-blue">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hotels-available">
+                                <h4 class="shadow-card font-600 mb-4">Hotels That I Have</h4>
+                                <div class="hotels-available-cards mb-5">
+                                    <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel1.jpg" alt="hotel1"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-1">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel2.jpg" alt="hotel2"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel3.jpg" alt="hotel3"
+                                                    class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="javascript:void(0)" class="btn btn-outline-black">See more hotels</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offers mb-50">
+                                <h4 class="shadow-card font-600 mb-4">Offers</h4>
+                                <a href="javascript:void(0)" class="offers-desc d-block">
+                                    <img src="./images/timmerman_hotel_resort.jpg" alt="Timmerman Hotel & Resort"
+                                        class="img-fluid" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between bottom-border mb-3 pb-3">
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-subscribe">
+                            <h6>Subscribe to Newsletter</h6>
+                            <div class="footer-subscribe-form mb-3">
+                                <label for="subscribeMail" class="form-label">Your email</label>
+                                <div class="footer-subscribe-form-input input-group align-items-center">
+                                    <input type="email" class="form-control" id="subscribeMail"
+                                        aria-describedby="emailHelp">
+                                    <a href="javascript:void(0)" class="d-flex align-items-center"><i
+                                            class="fa-solid fa-paper-plane" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-sm-6 col-md-3">
+                        <a href="javascript:void(0)"><img src="./images/Hotel&Luxury.svg" alt="hotel & luxury" class="img-fluid w190" loading="lazy"></a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-xl-2">
+                        <ul class="d-flex justify-content-sm-between justify-content-start footer-social flex-wrap mb-0 p-0">
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-paper-plane"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/countrySelect.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+
+</body>
+
+</html>

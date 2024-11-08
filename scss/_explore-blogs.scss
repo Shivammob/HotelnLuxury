@@ -1,0 +1,26 @@
+.explore-blogs {
+    padding: 25px 60px;
+    background-color: rgb(196 196 196 / 18%);
+    @media only screen and (max-width: 767px) {
+        padding: 25px 10px;
+    }
+    &-head {
+        border-bottom: 0.7px solid $color7;
+        &-loc {
+            position: relative;
+            p {
+                position: absolute;
+                bottom: 5%;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+        }
+        &-time {
+            color: $color2;
+            background: rgba(196, 196, 196, 0.16);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+    }
+}

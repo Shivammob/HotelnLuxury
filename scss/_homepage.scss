@@ -1,0 +1,664 @@
+.hero {
+    position: relative;
+    background: url(../images/herobanner.png) no-repeat;
+    background-size: cover;
+    height: 380px;
+
+    &-desc {
+        position: absolute;
+        top: 8%;
+        left: 0;
+        right: 0;
+        width: 640px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 15px;
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+
+        @media only screen and (max-width: 475px) {
+            top: 25%;
+        }
+
+        &-searchform {
+            position: relative;
+            top: -56px;
+            padding: 0.375rem 0.8rem 0.375rem 1.1rem;
+            box-shadow: 0px 2px 9.699999809265137px 0px #00000040;
+            border-radius: 40px;
+            background-color: $color-white;
+
+            @media only screen and (max-width: 575px) {
+                top: -20px;
+            }
+
+            input {
+                height: 45px;
+                border: none;
+                padding: 0;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            &-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 38px;
+                border-radius: 100%;
+                background: linear-gradient(180deg, #FA823C 0%, #F4610C 100%);
+
+                i {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.destination {
+    position: relative;
+    .destination-carousel {
+        &.owl-carousel {
+            position: unset;
+        }
+        &-slide {
+            &-cta {
+                position: relative;
+
+                h6 {
+                    color: $color-white;
+                    font-weight: 500;
+                    position: absolute;
+                    bottom: 6%;
+                    left: 6%;
+                    margin-bottom: 0;
+                    letter-spacing: 1px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+
+.inspiration {
+    &-carousel {
+        &.nav {
+            .nav-item {
+                .nav-link {
+                    padding: 10px;
+                    width: 100%;
+                    text-align: left;
+                    background: unset;
+                    &.active {
+                        .card {
+                            border: 2px solid $color13;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-slide {
+            .card {
+                border-radius: 16px;
+            }
+
+            &-desc {
+                p {
+                    .dot {
+                        position: relative;
+                        display: block;
+                        margin: 0 15px;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 45%;
+                            left: -9px;
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 100%;
+                            background: $color3;
+                        }
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 45%;
+                            right: -9px;
+                            width: 4px;
+                            height: 4px;
+                            border-radius: 100%;
+                            background: $color3;
+                        }
+                    }
+                }
+            }
+        }
+        .owl-nav {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 30%;
+            width: 100%;
+            z-index: -1;
+            button.owl-prev, button.owl-next {
+                font-size: 22px;
+                margin: 0 -10px;
+            }
+        }
+    }
+
+    &tab1 {
+        position: relative;
+  
+        &-desc {
+            color: $color-white;
+            position: absolute;
+            top: 14%;
+            left: 4%;
+            width: 355px;
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                top: 4%;
+            }
+            @media only screen and (max-width: 1199px) {
+                left: 0;
+                padding: 10px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .readfull {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+
+.trekking {
+    .stroke {
+        color: $color-white;
+        font-family: "Roboto", sans-serif;
+        -webkit-text-stroke: 1.6px $color4;
+        letter-spacing: 1px;
+    }
+
+    &-card {
+        position: relative;
+
+        &-desc {
+            color: $color-white;
+            position: absolute;
+            bottom: 3%;
+            padding: 0 15px;
+            z-index: 1;
+        }
+    }
+}
+
+
+.summer-breaks {
+    position: relative;
+
+    .sponsored {
+        color: $color6;
+        position: absolute;
+        top: 3%;
+        right: 1%;
+        padding: 2px 13px;
+        border-radius: 13px;
+        background: $color-white;
+    }
+
+    &-desc {
+        position: absolute;
+        bottom: 5%;
+        z-index: 1;
+
+        &-offer {
+            padding: 0 35px;
+        }
+    }
+}
+
+
+.most-popular {
+    .most-popular-carousel {
+        .owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+            background: linear-gradient(180deg, #F4610C 0%, #FA823C 100%);
+        }
+        .owl-dots .owl-dot span {
+            width: 8px;
+            height: 8px;
+            margin: 3px;
+        }
+    }
+    &-desc {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(179.83deg, rgba(0, 0, 0, 0) 0.15%, rgba(0, 0, 0, 0.4) 49.63%);
+        }
+
+        &-block {
+            position: absolute;
+            bottom: 0%;
+            left: 0;
+            padding: 0 20px;
+            width: 100%;
+            z-index: 1;
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                bottom: -4%;
+            }
+        }
+    }
+}
+
+.recentpost {
+    &-cards {
+        a {
+            h5 {
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.hotels-available {
+    &-cards {
+        p span {
+            color: $color21;
+            font-weight: 600;
+            font-size: 17px;
+        }
+    }
+}
+
+.siteintro {
+    &-left {
+        h2 {
+            color: $color10;
+            font-family: "Playfair Display SC", serif;
+            font-size: 34px;
+            font-weight: 700;
+        }
+    }
+    &-btn {
+        &-places, &-hotels {
+            display: block;
+            font-family: "Playfair Display SC", serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            padding: 20px 10px;
+            border: 1px solid transparent;
+            box-shadow: 0px 4px 16.899999618530273px 0px #00000033;
+            @media only screen and (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+        &-places {
+            color: $color-white;
+            background: $color10;
+            &:hover {
+                color: $color10;
+                background: $color-white;
+                border: 1px solid $color10;
+            }
+        }
+        &-hotels {
+           color: $color10;
+           background: $color22;
+           &:hover {
+                color: $color10;
+                border: 1px solid $color10;
+           }
+        }
+    }
+}
+
+.events {
+    h2 {
+        font-family: "Passions Conflict", cursive;
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    h2.events-subtitle {
+        color: $color10;
+        font-family: "Playfair Display SC", serif;
+        font-size: 26.5px;
+        font-weight: 700;
+    }
+
+    &-wrap {
+        &-desc {
+            text-align: center;
+            background: $color11;
+
+            h5 {
+                color: $color12;
+                font-family: "Playfair Display SC", serif;
+            }
+
+            &-cta {
+                color: $color-black;
+
+                i {
+                    color: $color10;
+                }
+            }
+
+            &-block {
+                color: $color-white;
+                font-size: 12px;
+                font-weight: 600;
+                background: $color10;
+                padding: 14px 18px;
+                line-height: 1;
+                width: 50%;
+                margin: -20px auto 10px auto;
+                position: relative;
+                @media only screen and (min-width: 768px) and (max-width: 991px) {
+                    width: 100%;
+                }
+                h6 {
+                    color: $color-white;
+                    font-family: "Open Sans", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+
+.vibe {
+    &-carousel {
+        &.owl-carousel {
+            transform: rotate(90deg);
+            width: 270px;
+            margin-top: 100px;
+        }
+
+        .item {
+            transform: rotate(-90deg);
+        }
+
+        &.owl-carousel .owl-nav {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: calc(50% - 33px);
+        }
+
+        &.owl-carousel .owl-nav .owl-prev,
+        &.owl-carousel .owl-nav .owl-next {
+            font-size: 36px;
+            top: unset;
+            bottom: 15px;
+        }
+    }
+}
+
+
+.interdestination {
+    &-card {
+        .btn.btn-main {
+            white-space: nowrap;
+            padding: 9px 20px;
+
+            // @media only screen and (max-width: 767px) {
+            //     width: 100%;
+            // }
+        }
+    }
+}
+
+
+.downloadapp {
+    position: relative;
+
+    &-desc {
+        position: absolute;
+        top: 12%;
+        left: 3%;
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            top: 3%;
+        }
+
+        @media only screen and (max-width: 767px) {
+            top: 17%;
+        }
+
+        h3 {
+            color: $color14;
+            font-weight: 700;
+        }
+
+        p {
+            color: $color15;
+        }
+
+        &-form {
+            input {
+                &::placeholder {
+                    /* Firefox */
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        &-link {
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: 767px) {
+               flex-direction: column;
+               align-items: start;
+               li {
+                margin-bottom: 10px;
+               }
+            }
+            @media only screen and (min-width: 768px) {
+                li {
+                    img {
+                        width: 140px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.popular-region {
+    &-card {
+        .card {
+            position: relative;
+
+            .card-body {
+                .popular-region-card-action {
+                    color: $color-white;
+
+                    &-guestfav {
+                        position: absolute;
+                        top: 3%;
+                        width: 44%;
+                        // &::before {
+                        //     content: "";
+                        //     display: block;
+                        //     width: 25px;
+                        //     height: 32px;
+                        //     right: -15px;
+                        //     top: 0px;
+                        //     position: absolute;
+                        //     background-color: #000000a8;
+                        //     transform: rotate(180deg);
+                        //     clip-path: polygon(64% 0, 100% 50%, 62% 100%, 0 100%, 0 0);
+                        // }
+                    }
+
+                    &-price {
+                        position: relative;
+                        left: 3%;
+                        bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.our-blog {
+    &-left {
+        position: relative;
+        @media only screen and (max-width: 767px) {
+            img {
+                height: 242px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-wrap {
+            &.our-blog-hover {
+                display: none;
+            }
+        }
+       
+       
+        &:hover {
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, rgb(43, 38, 22) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+            .our-blog-left-wrap {
+                display: none;
+            }
+            .our-blog-hover {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 6%;
+                padding: 0 25px;
+                margin: 0 auto;
+                z-index: 1;
+            }
+        }
+        &-wrap {
+           h2 {
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 22px;
+            }
+           }
+        }
+    }
+
+    &-right {
+        &-wrap {
+            &.our-blog-hover {
+                display: none;
+            }
+        }
+        &:hover {
+            .our-blog-desc {
+                display: none;
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(0deg, rgb(43, 38, 22) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+            .our-blog-hover {
+                display: block;
+                position: absolute;
+                top: 35%;
+                padding: 0 25px;
+                z-index: 1;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+
+    &-desc {
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        padding: 0 20px;
+        width: 100%;
+        z-index: 1;
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            bottom: -4%;
+            padding: 0 15px;
+        }
+    }
+}
+
+
+.popular-searches {
+    .card {
+        height: 262px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+         
+        &::-webkit-scrollbar-track {
+            background-color: $color16;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: $color17; 
+        }
+    }
+}

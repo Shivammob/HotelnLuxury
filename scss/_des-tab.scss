@@ -1,0 +1,87 @@
+.dest-tabs {
+    .nav {
+        border-bottom: 1px solid $color19;
+        margin: 0 0 45px;
+        .nav-item {
+            width: 25%;
+            text-align: center;
+            margin: 0 auto;
+            @media only screen and (max-width: 767px) {
+                width: 50%;
+            }
+          .nav-link {
+            color: $color1;
+            font-weight: 500;
+            background-color: $color20;
+            width: 100%;
+            padding: .7rem 1rem;
+            &.active {
+              color: $color19;
+              font-weight: 700;
+              border-bottom: 2px solid;
+            }
+          }
+        }
+    }
+    &-card {
+        &-right {
+            padding: 25px;
+            .rating {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 37px;
+                height: 32px;
+                margin-right: 4px;
+                background: #F7931E4D;
+                border: 1px solid $color19;
+                border-radius: 4px;
+            }
+            .action-icon {
+                color: $color1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4px;
+                width: 40px;
+                height: 40px;
+                border: 1px solid $color19;
+                border-radius: 4px;
+            }
+            .btn-main, .btn-outline-orange {
+                padding: 13px;
+            }
+        }
+    }
+}
+
+
+.overview {
+    &-block {
+        border: 1px solid $color13;
+        border-radius: 12px;
+        padding: 15px;
+        width: 160px;
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}
+
+
+.destrips {
+    &-card {
+        &-slide {
+            &-desc {
+                position: relative;
+                h6 {
+                    color: $color-white;
+                    font-weight: 600;
+                    position: absolute;
+                    bottom: 5%;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $color1;
+    overflow-x: hidden;
+    transition: opacity .5s 0.3s ease-in-out;
+    background: $color5;
+    &.menu-show {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    outline: none;
+}
+
+button {
+    border: none;
+    // background-color: $color-white;
+    outline: none;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 9px 16px;
+    transition: 0.2s ease;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    &:focus {
+        box-shadow: none;
+    }
+    &.btn-main {
+        color: $color-white;
+        padding: 9px 16px 9px 16px;
+        border: 1px solid $color13;
+        background: linear-gradient(180deg, #FA823C 0%, #bf4c09 100%);
+        &:hover {
+            color: $color13;
+            background: $color-white;
+            // border: 1px solid $color-white;
+        }
+    } 
+    &.btn-blue {
+        color: $color-white;
+        font-weight: 700;
+        background-color: $color8;
+        padding: 9px 16px 9px 16px;
+    }
+    &.btn-outline-black {
+        border: 1px solid $color-black;
+        &:hover {
+            color: $color-white;
+            background: $color-black;
+        }
+    }
+    &.btn-white {
+        color: $color3;
+        background: $color-white;
+    }
+    &.btn-grey {
+        color: $color1;
+        background: $color24;
+        padding: 9px 28px;
+        &:hover {
+            color: $color24;
+            background: $color1;
+        }
+    }
+    &.btn-outline-orange {
+        border: 1px solid $color13;
+        &:hover {
+            color: $color-white;
+            background: linear-gradient(180deg, #FA823C 0%, #bf4c09 100%);
+        }
+    }
+}

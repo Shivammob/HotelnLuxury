@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Luxury</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/countrySelect.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="navbar-wrap d-flex justify-content-between align-items-center flex-wrap">
+                <a class="navbar-brand" href="index.html"><img src="./images/Hotel&Luxury.svg"
+                        alt="Hotel & Luxury" class="img-fluid" loading="lazy"></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" aria-current="page" href="destination.html"><i
+                                    class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Desitination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="hotels.html"><i class="fa-solid fa-bed me-1"
+                                    aria-hidden="true"></i>Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="explore.html"><i
+                                    class="fa-solid fa-file-lines me-1" aria-hidden="true"></i>Things to do</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="destination-tab.html">India</a></li>
+                                <li><a class="dropdown-item" href="explore-blogs.html">Blogs</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-end d-flex align-items-center mb-0 p-0">
+                        <li class="nav-end-list">
+                            <div class="country-nav me-2 me-md-4">
+                                <input id="country_selector" type="text" onchange="countryChange(this)">
+                            </div>
+                        </li>
+                        <!-- <li class="nav-end-list"><img
+                                src="https://ik.imagekit.io/syin0m2gb/man__2__i3ln6TXs17.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673501029262"
+                                alt="user" class="img-fluid w40 radius-100" loading="lazy"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="hero hero-dest mb-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="hero-desc">
+                                <div class="mb-3 hero-desc-searchform d-flex align-items-center">
+                                    <input type="email" class="form-control" id="placeSearch"
+                                        aria-describedby="placeSearch" placeholder="Where to?">
+                                    <a href="javascript:void(0)" class="hero-desc-searchform-icon">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Lorem</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="dest-tabs mb-5">
+                    <ul class="nav" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="navtab1" data-bs-toggle="tab" data-bs-target="#tab1"
+                                type="button" role="tab" aria-controls="tab1" aria-selected="true">India</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="navtab2" data-bs-toggle="tab" data-bs-target="#tab2"
+                                type="button" role="tab" aria-controls="tab2" aria-selected="false">Place To
+                                Visit</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="navtab3" data-bs-toggle="tab" data-bs-target="#tab3"
+                                type="button" role="tab" aria-controls="tab3" aria-selected="false">Hotels</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="navtab4" data-bs-toggle="tab" data-bs-target="#tab4"
+                                type="button" role="tab" aria-controls="tab4" aria-selected="false">Explore
+                                More</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="navtab1">
+                            <div class="card dest-tabs-card radius15 overflow-hidden mb-50">
+                                <div class="card-body p-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-5">
+                                            <div class="dest-tabs-card-left h-100">
+                                                <img src="./images/dest-tab/india.jpg" alt="india"
+                                                    class="img-fluid h-100" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="dest-tabs-card-right">
+                                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                                    <h1 class="mb-0">India</h1>
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="d-flex align-items-center font-10 font-700 mb-0 me-3">
+                                                            <span class="rating">4.2</span>Very Good
+                                                        </p>
+                                                        <a href="javascript:void(0)" class="action-icon me-3"><i
+                                                                class="fa fa-heart" aria-hidden="true"></i></a>
+                                                        <a href="javascript:void(0)" class="action-icon"><i
+                                                                class="fa fa-share-nodes" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div>
+                                                <h5 class="font-400 mb-4"><span class="font-600">Continent:</span> Asia
+                                                </h5>
+                                                <p class="font-18 text-grey mb-4">“In India the people follow different
+                                                    faiths and live together in harmony; Come! experience India!”</p>
+                                                <ul class="d-flex align-items-center p-0 mb-4">
+                                                    <li class="font-600 me-4"><img
+                                                            src="./images/dest-tab/Indian_flag.jpg" alt="india"
+                                                            class="img-fluid w35 d-block mb-2" loading="lazy">Indian <span
+                                                            class="font-300">flag</span></li>
+                                                    <li class="font-600 me-4"><i
+                                                            class="fa fa-indian-rupee-sign text-orange d-block w35 font-24 mb-2"
+                                                            aria-hidden="true"></i>INR <span
+                                                            class="font-300">currency</span></li>
+                                                    <li class="font-600 me-4"><i
+                                                            class="fa-solid fa-location-dot text-orange d-block w35 font-24 mb-2"
+                                                            aria-hidden="true"></i>4000</li>
+                                                </ul>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <a href="javascript:void(0)"
+                                                            class="btn btn-main d-block mb-3 mb-md-0">Checkout
+                                                            Hotels</a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <a href="javascript:void(0)"
+                                                            class="btn btn-outline-orange d-block mb-3 mb-md-0">Places
+                                                            to Visit</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-50">
+                                <div class="col-md-9">
+                                    <div class="overview mb-50">
+                                        <h2 class="mb-3">Overview</h2>
+                                        <p class="font-500 text-grey mb-4">Lorem ipsum dolor sit amet consectetur. Eros tincidunt
+                                            nisl massa nisi tristique. Sed ut rutrum consectetur faucibus. Commodo risus sed elit
+                                            vitae fames dignissim. Purus elementum tempor quis euismod dolor egestas in enim.</p>
+                                        <div class="hstack gap-3">
+                                            <div class="overview-block">
+                                                <img src="./images/dest-tab/ideal_duration.svg" alt="ideal duration" class="img-fluid mb-4" loading="lazy">
+                                                <p class="font-600 font-14">15-20 Days</p>
+                                                <h6 class="font-600 mb-0">Ideal Duration</h6>
+                                            </div>
+                                            <div class="overview-block">
+                                                <img src="./images/dest-tab/best_time.svg" alt="best time" class="img-fluid mb-4" loading="lazy">
+                                                <p class="font-500 font-14">December-March</p>
+                                                <h6 class="font-600 mb-0">Best Time</h6>
+                                            </div>
+                                            <div class="overview-block">
+                                                <img src="./images/dest-tab/budget.svg" alt="budget" class="img-fluid mb-4" loading="lazy">
+                                                <p class="font-500 font-14">Low</p>
+                                                <h6 class="font-600 mb-0">Budget</h6>
+                                            </div>
+                                            <div class="overview-block">
+                                                <img src="./images/dest-tab/language.svg" alt="language" class="img-fluid mb-4" loading="lazy">
+                                                <p class="font-500 font-14">Hindi, English</p>
+                                                <h6 class="font-600 mb-0">Language</h6>
+                                            </div>
+                                            <div class="overview-block">
+                                                <img src="./images/dest-tab/safe.svg" alt="safe" class="img-fluid mb-4" loading="lazy">
+                                                <p class="font-500 font-14">Yes</p>
+                                                <h6 class="font-600 mb-0">Safe</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="destrips position-relative mb-50">
+                                        <div class="row mb-4">
+                                            <div class="col-md-9">
+                                                <div class="destrips-desc">
+                                                    <h2 class="mb-3">Top Destinations For your Trips</h2>
+                                                    <p class="font-20 font-600 text-grey">Top Selling</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="destrips-card arrow-carousel owl-carousel owl-theme position-static">
+                                            <div class="destrips-card-slide mb-4">
+                                                <div class="card radius8 overflow-hidden">
+                                                    <div class="card-body p-0">
+                                                        <div class="destrips-card-slide-desc">
+                                                            <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                            <h6 class="mb-0">City, State</h6>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                            <a href="javascript:void(0)" class="btn btn-grey px-4 font-12 mb-2 mb-xl-0">Read
+                                                                More</a>
+                                                            <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="destrips-card-slide mb-4">
+                                                <div class="card radius8 overflow-hidden">
+                                                    <div class="card-body p-0">
+                                                        <div class="destrips-card-slide-desc">
+                                                            <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                            <h6 class="mb-0">City, State</h6>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                            <a href="javascript:void(0)" class="btn btn-grey px-4 font-12 mb-2 mb-xl-0">Read
+                                                                More</a>
+                                                            <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="destrips-card-slide mb-4">
+                                                <div class="card radius8 overflow-hidden">
+                                                    <div class="card-body p-0">
+                                                        <div class="destrips-card-slide-desc">
+                                                            <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                            <h6 class="mb-0">City, State</h6>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                            <a href="javascript:void(0)" class="btn btn-grey px-4 font-12 mb-2 mb-xl-0">Read
+                                                                More</a>
+                                                            <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="destrips-card-slide mb-4">
+                                                <div class="card radius8 overflow-hidden">
+                                                    <div class="card-body p-0">
+                                                        <div class="destrips-card-slide-desc">
+                                                            <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                            <h6 class="mb-0">City, State</h6>
+                                                        </div>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                            <a href="javascript:void(0)" class="btn btn-grey px-4 font-12 mb-2 mb-xl-0">Read
+                                                                More</a>
+                                                            <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thingsdo mb-50">
+                                        <div class="row mb-4">
+                                            <div class="col-md-9">
+                                                <div class="thingsdo-desc">
+                                                    <h2 class="mb-3">Things to do</h2>
+                                                    <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                                                <a href="javascript:void(0)" class="btn btn-outline-black">See more places</a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 mb-4">
+                                                <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                                    <div class="card-body p-0">
+                                                        <img src="./images/explore/pop1.jpg" alt="pop1" class="img-fluid" loading="lazy">
+                                                        <div class="most-trending-wrap-desc p-3">
+                                                            <h6 class="mb-1">Title</h6>
+                                                            <p class="font-14 mb-3">Subhead</p>
+                                                            <p class="font-14">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit, sed do eiusmod tempor</p>
+                                                            <p class="d-flex align-items-baseline font-12 mb-0"><i
+                                                                    class="fa-solid fa-location-dot font-14 me-1 text-orange"
+                                                                    aria-hidden="true"></i>Penang,
+                                                                Malaysia </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 mb-4">
+                                                <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                                    <div class="card-body p-0">
+                                                        <img src="./images/explore/pop2.jpg" alt="pop2" class="img-fluid" loading="lazy">
+                                                        <div class="most-trending-wrap-desc p-3">
+                                                            <h6 class="mb-1">Title</h6>
+                                                            <p class="font-14 mb-3">Subhead</p>
+                                                            <p class="font-14">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit, sed do eiusmod tempor</p>
+                                                            <p class="d-flex align-items-baseline font-12 mb-0"><i
+                                                                    class="fa-solid fa-location-dot font-14 me-1 text-orange"
+                                                                    aria-hidden="true"></i>Penang,
+                                                                Malaysia </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-4 mb-4">
+                                                <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                                    <div class="card-body p-0">
+                                                        <img src="./images/explore/pop3.jpg" alt="pop3" class="img-fluid" loading="lazy">
+                                                        <div class="most-trending-wrap-desc p-3">
+                                                            <h6 class="mb-1">Title</h6>
+                                                            <p class="font-14 mb-3">Subhead</p>
+                                                            <p class="font-14">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing elit, sed do eiusmod tempor</p>
+                                                            <p class="d-flex align-items-baseline font-12 mb-0"><i
+                                                                    class="fa-solid fa-location-dot font-14 me-1 text-orange"
+                                                                    aria-hidden="true"></i>Penang,
+                                                                Malaysia </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="position-sticky sticky">
+                                        <div class="hotels-available">
+                                            <h4 class="shadow-card font-600 mb-4">Hotels That I Have</h4>
+                                            <div class="hotels-available-cards mb-5">
+                                                <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-3">
+                                                            <img src="./images/hotel1.jpg" alt="hotel1" class="img-fluid w-100 mb-2" loading="lazy">
+                                                        </div>
+                                                        <div class="col-md-9 ps-1">
+                                                            <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                            <div class="stars font-10 color-yellow">
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                            </div>
+                                                            <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-3">
+                                                            <img src="./images/hotel2.jpg" alt="hotel2" class="img-fluid w-100 mb-2" loading="lazy">
+                                                        </div>
+                                                        <div class="col-md-9 ps-2">
+                                                            <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                            <div class="stars font-10 color-yellow">
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                            </div>
+                                                            <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="javascript:void(0)" class="text-black d-block mb-4">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-3">
+                                                            <img src="./images/hotel3.jpg" alt="hotel3" class="img-fluid w-100 mb-2" loading="lazy">
+                                                        </div>
+                                                        <div class="col-md-9 ps-2">
+                                                            <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                            <div class="stars font-10 color-yellow">
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                            </div>
+                                                            <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more hotels</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="most-popular mb-50">
+                                            <h4 class="shadow-card font-600 mb-4">Most Popular</h4>
+                                            <div class="most-popular-carousel owl-carousel owl-theme">
+                                                <a href="javascript:void(0)" class="most-popular-desc d-block">
+                                                    <img src="./images/most_popular.jpg" alt="most popular" class="img-fluid" loading="lazy">
+                                                    <div class="most-popular-desc-block text-white">
+                                                        <p class="left-bdr mb-1 font-12">July, 15, 2021 - <span
+                                                                class="text-uppercase">Things to do</span></p>
+                                                        <h6>A traveler’s guide to Penang</h6>
+                                                        <p class="d-flex align-items-baseline font-12"><i
+                                                                class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                                aria-hidden="true"></i>Penang,
+                                                            Malaysia</p>
+                                                    </div>
+                                                </a>
+                                                <a href="javascript:void(0)" class="most-popular-desc d-block">
+                                                    <img src="./images/most_popular.jpg" alt="most popular" class="img-fluid" loading="lazy">
+                                                    <div class="most-popular-desc-block text-white">
+                                                        <p class="left-bdr mb-1 font-12">July, 15, 2021 - <span
+                                                                class="text-uppercase">Things to do</span></p>
+                                                        <h6>A traveler’s guide to Penang</h6>
+                                                        <p class="d-flex align-items-baseline font-12"><i
+                                                                class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                                aria-hidden="true"></i>Penang,
+                                                            Malaysia</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="nearby-countries">
+                                            <h4 class="shadow-card font-600 mb-4">Nearby Countries</h4>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-4">
+                                                    <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                                        <div class="card-body p-0">
+                                                            <img src="./images/dest-tab/nepal.jpg" alt="nepal" class="img-fluid" loading="lazy">
+                                                            <div
+                                                                class="nearby-countries-card d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                                <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                                        class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                                        aria-hidden="true"></i>Nepal</h6>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-6 mb-4">
+                                                    <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                                        <div class="card-body p-0">
+                                                            <img src="./images/dest-tab/china.jpg" alt="china" class="img-fluid" loading="lazy">
+                                                            <div
+                                                                class="nearby-countries-card d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                                <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                                        class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                                        aria-hidden="true"></i>China</h6>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="navtab2">Place To Visit
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="navtab3">Hotels</div>
+                        <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="navtab4">Explore More
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="overview mb-50">
+                            <h2 class="mb-3">Overview</h2>
+                            <p class="font-500 text-grey mb-4">Lorem ipsum dolor sit amet consectetur. Eros tincidunt
+                                nisl massa nisi tristique. Sed ut rutrum consectetur faucibus. Commodo risus sed elit
+                                vitae fames dignissim. Purus elementum tempor quis euismod dolor egestas in enim.</p>
+                            <div class="hstack gap-3">
+                                <div class="overview-block">
+                                    <img src="./images/dest-tab/ideal_duration.svg" alt="ideal duration" class="img-fluid mb-4" loading="lazy">
+                                    <p class="font-600 font-14">15-20 Days</p>
+                                    <h6 class="font-600 mb-0">Ideal Duration</h6>
+                                </div>
+                                <div class="overview-block">
+                                    <img src="./images/dest-tab/best_time.svg" alt="best time" class="img-fluid mb-4" loading="lazy">
+                                    <p class="font-500 font-14">December-March</p>
+                                    <h6 class="font-600 mb-0">Best Time</h6>
+                                </div>
+                                <div class="overview-block">
+                                    <img src="./images/dest-tab/budget.svg" alt="budget" class="img-fluid mb-4" loading="lazy">
+                                    <p class="font-500 font-14">Low</p>
+                                    <h6 class="font-600 mb-0">Budget</h6>
+                                </div>
+                                <div class="overview-block">
+                                    <img src="./images/dest-tab/language.svg" alt="language" class="img-fluid mb-4" loading="lazy">
+                                    <p class="font-500 font-14">Hindi, English</p>
+                                    <h6 class="font-600 mb-0">Language</h6>
+                                </div>
+                                <div class="overview-block">
+                                    <img src="./images/dest-tab/safe.svg" alt="safe" class="img-fluid mb-4" loading="lazy">
+                                    <p class="font-500 font-14">Yes</p>
+                                    <h6 class="font-600 mb-0">Safe</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destrips position-relative mb-50">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="destrips-desc">
+                                        <h2 class="mb-3">Top Destinations For your Trips</h2>
+                                        <p class="font-20 font-600 text-grey">Top Selling</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destrips-card arrow-carousel owl-carousel owl-theme position-static">
+                                <div class="destrips-card-slide mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="destrips-card-slide-desc">
+                                                <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                <h6 class="mb-0">City, State</h6>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                <a href="javascript:void(0)" class="btn btn-grey font-12 mb-2 mb-xl-0">Read
+                                                    More</a>
+                                                <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="destrips-card-slide mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="destrips-card-slide-desc">
+                                                <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                <h6 class="mb-0">City, State</h6>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                <a href="javascript:void(0)" class="btn btn-grey font-12 mb-2 mb-xl-0">Read
+                                                    More</a>
+                                                <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="destrips-card-slide mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="destrips-card-slide-desc">
+                                                <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                <h6 class="mb-0">City, State</h6>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                <a href="javascript:void(0)" class="btn btn-grey font-12 mb-2 mb-xl-0">Read
+                                                    More</a>
+                                                <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="destrips-card-slide mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="destrips-card-slide-desc">
+                                                <img src="./images/dest-tab/trips.jpg" alt="trips" class="img-fluid" loading="lazy">
+                                                <h6 class="mb-0">City, State</h6>
+                                            </div>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center flex-wrap flex-xl-nowrap p-3">
+                                                <a href="javascript:void(0)" class="btn btn-grey font-12 mb-2 mb-xl-0">Read
+                                                    More</a>
+                                                <a href="javascript:void(0)" class="btn btn-main font-12 mb-2 mb-xl-0">Nearby Hotels</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thingsdo mb-50">
+                            <div class="row mb-4">
+                                <div class="col-md-9">
+                                    <div class="thingsdo-desc">
+                                        <h2 class="mb-3">Things to do</h2>
+                                        <p class="mb-md-0">Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-center justify-content-md-end">
+                                    <a href="javascript:void(0)" class="btn btn-outline-black">See more places</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                        <div class="card-body p-0">
+                                            <img src="./images/explore/pop1.jpg" alt="pop1" class="img-fluid" loading="lazy">
+                                            <div class="most-trending-wrap-desc p-3">
+                                                <h6 class="mb-1">Title</h6>
+                                                <p class="font-14 mb-3">Subhead</p>
+                                                <p class="font-14">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor</p>
+                                                <p class="d-flex align-items-baseline font-12 mb-0"><i
+                                                        class="fa-solid fa-location-dot font-14 me-1 text-orange"
+                                                        aria-hidden="true"></i>Penang,
+                                                    Malaysia </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                        <div class="card-body p-0">
+                                            <img src="./images/explore/pop2.jpg" alt="pop2" class="img-fluid" loading="lazy">
+                                            <div class="most-trending-wrap-desc p-3">
+                                                <h6 class="mb-1">Title</h6>
+                                                <p class="font-14 mb-3">Subhead</p>
+                                                <p class="font-14">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor</p>
+                                                <p class="d-flex align-items-baseline font-12 mb-0"><i
+                                                        class="fa-solid fa-location-dot font-14 me-1 text-orange"
+                                                        aria-hidden="true"></i>Penang,
+                                                    Malaysia </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                        <div class="card-body p-0">
+                                            <img src="./images/explore/pop3.jpg" alt="pop3" class="img-fluid" loading="lazy">
+                                            <div class="most-trending-wrap-desc p-3">
+                                                <h6 class="mb-1">Title</h6>
+                                                <p class="font-14 mb-3">Subhead</p>
+                                                <p class="font-14">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor</p>
+                                                <p class="d-flex align-items-baseline font-12 mb-0"><i
+                                                        class="fa-solid fa-location-dot font-14 me-1 text-orange"
+                                                        aria-hidden="true"></i>Penang,
+                                                    Malaysia </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="position-sticky sticky">
+                            <div class="hotels-available">
+                                <h4 class="shadow-card font-600 mb-4">Hotels That I Have</h4>
+                                <div class="hotels-available-cards mb-5">
+                                    <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel1.jpg" alt="hotel1" class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-1">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="borderbottom-1x text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel2.jpg" alt="hotel2" class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="text-black d-block mb-4">
+                                        <div class="row g-0">
+                                            <div class="col-md-3">
+                                                <img src="./images/hotel3.jpg" alt="hotel3" class="img-fluid w-100 mb-2" loading="lazy">
+                                            </div>
+                                            <div class="col-md-9 ps-2">
+                                                <h6 class="font-500 mb-0">Hotel Mountain Queen</h6>
+                                                <div class="stars font-10 color-yellow">
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <p class="font-14 mb-1"><span>₹ 549</span> / room / night</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="javascript:void(0)" class="btn btn-outline-black">See more hotels</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="most-popular mb-50">
+                                <h4 class="shadow-card font-600 mb-4">Most Popular</h4>
+                                <div class="most-popular-carousel owl-carousel owl-theme">
+                                    <a href="javascript:void(0)" class="most-popular-desc d-block">
+                                        <img src="./images/most_popular.jpg" alt="most popular" class="img-fluid" loading="lazy">
+                                        <div class="most-popular-desc-block text-white">
+                                            <p class="left-bdr mb-1 font-12">July, 15, 2021 - <span
+                                                    class="text-uppercase">Things to do</span></p>
+                                            <h6>A traveler’s guide to Penang</h6>
+                                            <p class="d-flex align-items-baseline font-12"><i
+                                                    class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                    aria-hidden="true"></i>Penang,
+                                                Malaysia</p>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="most-popular-desc d-block">
+                                        <img src="./images/most_popular.jpg" alt="most popular" class="img-fluid" loading="lazy">
+                                        <div class="most-popular-desc-block text-white">
+                                            <p class="left-bdr mb-1 font-12">July, 15, 2021 - <span
+                                                    class="text-uppercase">Things to do</span></p>
+                                            <h6>A traveler’s guide to Penang</h6>
+                                            <p class="d-flex align-items-baseline font-12"><i
+                                                    class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                    aria-hidden="true"></i>Penang,
+                                                Malaysia</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="nearby-countries">
+                                <h4 class="shadow-card font-600 mb-4">Nearby Countries</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                            <div class="card-body p-0">
+                                                <img src="./images/dest-tab/nepal.jpg" alt="nepal" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="nearby-countries-card d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>Nepal</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <a class="card radius8 overflow-hidden text-reset" href="javascript:void(0)">
+                                            <div class="card-body p-0">
+                                                <img src="./images/dest-tab/china.jpg" alt="china" class="img-fluid" loading="lazy">
+                                                <div
+                                                    class="nearby-countries-card d-flex justify-content-between align-items-center flex-wrap flex-lg-nowrap p-3">
+                                                    <h6 class="d-flex align-items-baseline font-12 mb-lg-0"><i
+                                                            class="fa-solid fa-location-dot d-block font-14 me-1 text-orange"
+                                                            aria-hidden="true"></i>China</h6>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between bottom-border mb-3 pb-3">
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-subscribe">
+                            <h6>Subscribe to Newsletter</h6>
+                            <div class="footer-subscribe-form mb-3">
+                                <label for="subscribeMail" class="form-label">Your email</label>
+                                <div class="footer-subscribe-form-input input-group align-items-center">
+                                    <input type="email" class="form-control" id="subscribeMail"
+                                        aria-describedby="emailHelp">
+                                    <a href="javascript:void(0)" class="d-flex align-items-center"><i
+                                            class="fa-solid fa-paper-plane" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-sm-6 col-md-3">
+                        <a href="javascript:void(0)"><img src="./images/Hotel&Luxury.svg" alt="hotel & luxury"
+                                class="img-fluid w190" loading="lazy"></a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-xl-2">
+                        <ul
+                            class="d-flex justify-content-sm-between justify-content-start footer-social flex-wrap mb-0 p-0">
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-paper-plane"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/countrySelect.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+
+</body>
+
+</html>

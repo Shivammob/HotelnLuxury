@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Luxury | Hotels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/countrySelect.css">
+    <link rel="stylesheet" href="./css/daterange.css">
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="navbar-wrap d-flex justify-content-between align-items-center flex-wrap">
+                <a class="navbar-brand" href="index.html"><img src="./images/Hotel&Luxury.svg"
+                        alt="Hotel & Luxury" class="img-fluid" loading="lazy"></a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" aria-current="page" href="destination.html"><i
+                                    class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Desitination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="hotels.html"><i class="fa-solid fa-bed me-1"
+                                    aria-hidden="true"></i>Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-icon" href="explore.html"><i
+                                    class="fa-solid fa-file-lines me-1" aria-hidden="true"></i>Things to do</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Explore More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="destination-tab.html">India</a></li>
+                                <li><a class="dropdown-item" href="explore-blogs.html">Blogs</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav-end d-flex align-items-center mb-0 p-0">
+                        <li class="nav-end-list">
+                            <div class="country-nav me-2 me-md-4">
+                                <input id="country_selector" type="text" onchange="countryChange(this)">
+                            </div>
+                        </li>
+                        <!-- <li class="nav-end-list"><img
+                                src="https://ik.imagekit.io/syin0m2gb/man__2__i3ln6TXs17.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673501029262"
+                                alt="user" class="img-fluid w40 radius-100" loading="lazy"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="ads mt-4 mb-4 mb-md-5">
+                <div class="ads-container">
+                    <a href="javascript:void(0)">
+                        <img src="./images/hotels/ads.jpg" alt="ads" class="img-fluid" loading="lazy">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mb-4">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Lorem</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-5 pe-md-4">
+                        <div class="card destsearch position-sticky sticky">
+                            <div class="card-body p-md-4">
+                                <div class="mb-4">
+                                    <label for="destination" class="form-label">Destination</label>
+                                    <div class="destsearch-input d-flex align-items-center">
+                                        <i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i>
+                                        <input type="email" class="form-control" id="destination"
+                                            placeholder="Jaipur, Rajasthan" aria-describedby="emailHelp">
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="daterange" class="form-label">Date In-Out</label>
+                                    <div class="input-group destsearch-input d-flex align-items-center">
+                                        <i class="fa-solid fa-calendar-check me-2" aria-hidden="true"></i>
+                                        <input type="text" class="form-control custom-daterange" id="daterange" />
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="destsearch-quantity mb-4">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <label for="rooms" class="form-label text-uppercase">Rooms</label>
+                                            <div class="destsearchQuantity">
+                                                <input type="number" id="rooms" min="1" max="9" step="1" value="1">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <label for="adults" class="form-label text-uppercase">Adults</label>
+                                            <div class="destsearchQuantity">
+                                                <input type="number" id="adults" min="1" max="9" step="1" value="1">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <label for="children" class="form-label text-uppercase">Children</label>
+                                            <div class="destsearchQuantity">
+                                                <input type="number" id="children" min="0" max="9" step="1" value="0">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="destsearch-star mb-4">
+                                    <label class="text-uppercase mb-1">Star Rating</label>
+                                    <div class="form-check d-flex mb-1">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="checkBox">
+                                        <div class="stars align-self-center me-2">
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="text-uppercase align-self-center">5 Stars</span>
+                                    </div>
+                                    <div class="form-check d-flex mb-1">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="checkBox">
+                                        <div class="stars align-self-center me-2">
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="text-uppercase align-self-center">4 Stars</span>
+                                    </div>
+                                    <div class="form-check d-flex mb-1">
+                                        <input class="form-check-input me-2" type="checkbox" value="" id="checkBox">
+                                        <div class="stars align-self-center me-2">
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star stars-colored" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <span class="text-uppercase align-self-center">3 Stars</span>
+                                    </div>
+                                </div>
+                                <a href="javascript:void(0)" class="btn btn-main w-100">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Search
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="results">
+                            <h1 class="font-14 font-600">Result For : <span>Jaipur, Rajasthan</span></h1>
+                            <div class="results-btn mb-4 ">
+                                <a href="javascript:void(0)" class="results-btn-cta">
+                                    <i class="fa-solid fa-sliders me-1" aria-hidden="true"></i> Sort
+                                </a>
+                                <a href="javascript:void(0)" class="results-btn-cta">
+                                    Popularity
+                                </a>
+                                <a href="javascript:void(0)" class="results-btn-cta">
+                                    Price (Low to High)
+                                </a>
+                                <a href="javascript:void(0)" class="results-btn-cta">
+                                    Price (High to Low)
+                                </a>
+                                <a href="javascript:void(0)" class="results-btn-cta">
+                                    Rating (High to Low)
+                                </a>
+                                <a href="javascript:void(0)" class="results-btn-cta">
+                                    Rating (Low to High)
+                                </a>
+                            </div>
+                            <div class="results-card">
+                                <div class="position-relative mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="results-card-left h-100">
+                                                        <img src="./images/hotels/hotels1.jpg"
+                                                            alt="hotel mountain queen" class="img-fluid h-100" loading="lazy">
+                                                        <div class="notes notes-green">
+                                                            <h6 class="font-500 font-12 mb-0">Breakfast included</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 align-self-end">
+                                                    <div class="results-card-right">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                                            <h5 class="text-orange font-600 mb-lg-0">Hotel Mountain
+                                                                Queen
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex align-items-center font-10 font-700 mb-0">
+                                                                <span class="rating">4.2</span>
+                                                                <p class="mb-0">Very Good<span
+                                                                        class="d-block font-400 text-nowrap">(650
+                                                                        reviews)</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="font-600 mb-4">Near Jammu Airport, Jammu Kasmir Road
+                                                        </h6>
+                                                        <div class="results-card-right-price d-flex align-items-center">
+                                                            <h2 class="me-3">₹ 549</h2>
+                                                            <h5 class="text-decoration-line-through me-3">₹680</h5>
+                                                            <h5 class="discount">65%off</h5>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <p class="font-12 font-300 mb-0">per room per night</p>
+                                                            <a href="javascript:void(0)" class="btn btn-main">Book
+                                                                Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="results-card-left h-100">
+                                                        <img src="./images/hotels/hotels2.jpg"
+                                                            alt="hotel mountain queen" class="img-fluid h-100" loading="lazy">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 align-self-end">
+                                                    <div class="results-card-right">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                                            <h5 class="text-orange font-600 mb-lg-0">Hotel Mountain
+                                                                Queen
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex align-items-center font-10 font-700 mb-0">
+                                                                <span class="rating">4.2</span>
+                                                                <p class="mb-0">Very Good<span
+                                                                        class="d-block font-400 text-nowrap">(650
+                                                                        reviews)</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="font-600 mb-4">Near Jammu Airport, Jammu Kasmir Road
+                                                        </h6>
+                                                        <div class="results-card-right-price d-flex align-items-center">
+                                                            <h2 class="me-3">₹ 549</h2>
+                                                            <h5 class="text-decoration-line-through me-3">₹680</h5>
+                                                            <h5 class="discount">65%off</h5>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <p class="font-12 font-300 mb-0">per room per night</p>
+                                                            <a href="javascript:void(0)" class="btn btn-main">Book
+                                                                Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="results-card-left h-100">
+                                                        <img src="./images/hotels/hotels3.jpg"
+                                                            alt="hotel mountain queen" class="img-fluid h-100" loading="lazy">
+                                                        <div class="notes notes-orange">
+                                                            <h6 class="font-500 font-12 mb-0">Special Offer</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 align-self-end">
+                                                    <div class="results-card-right">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                                            <h5 class="text-orange font-600 mb-lg-0">Hotel Mountain
+                                                                Queen
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex align-items-center font-10 font-700 mb-0">
+                                                                <span class="rating">4.2</span>
+                                                                <p class="mb-0">Very Good<span
+                                                                        class="d-block font-400 text-nowrap">(650
+                                                                        reviews)</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="font-600 mb-4">Near Jammu Airport, Jammu Kasmir Road
+                                                        </h6>
+                                                        <div class="results-card-right-price d-flex align-items-center">
+                                                            <h2 class="me-3">₹ 549</h2>
+                                                            <h5 class="text-decoration-line-through me-3">₹680</h5>
+                                                            <h5 class="discount">65%off</h5>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <p class="font-12 font-300 mb-0">per room per night</p>
+                                                            <a href="javascript:void(0)" class="btn btn-main">Book
+                                                                Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="results-card-left h-100">
+                                                        <img src="./images/hotels/hotels4.jpg"
+                                                            alt="hotel mountain queen" class="img-fluid h-100" loading="lazy">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 align-self-end">
+                                                    <div class="results-card-right">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                                            <h5 class="text-orange font-600 mb-lg-0">Hotel Mountain
+                                                                Queen
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex align-items-center font-10 font-700 mb-0">
+                                                                <span class="rating">4.2</span>
+                                                                <p class="mb-0">Very Good<span
+                                                                        class="d-block font-400 text-nowrap">(650
+                                                                        reviews)</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="font-600 mb-4">Near Jammu Airport, Jammu Kasmir Road
+                                                        </h6>
+                                                        <div class="results-card-right-price d-flex align-items-center">
+                                                            <h2 class="me-3">₹ 549</h2>
+                                                            <h5 class="text-decoration-line-through me-3">₹680</h5>
+                                                            <h5 class="discount">65%off</h5>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <p class="font-12 font-300 mb-0">per room per night</p>
+                                                            <a href="javascript:void(0)" class="btn btn-main">Book
+                                                                Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-relative mb-4">
+                                    <div class="card radius8 overflow-hidden">
+                                        <div class="card-body p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="results-card-left h-100">
+                                                        <img src="./images/hotels/hotels5.jpg"
+                                                            alt="hotel mountain queen" class="img-fluid h-100" loading="lazy">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8 align-self-end">
+                                                    <div class="results-card-right">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                                                            <h5 class="text-orange font-600 mb-lg-0">Hotel Mountain
+                                                                Queen
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex align-items-center font-10 font-700 mb-0">
+                                                                <span class="rating">4.2</span>
+                                                                <p class="mb-0">Very Good<span
+                                                                        class="d-block font-400 text-nowrap">(650
+                                                                        reviews)</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <h6 class="font-600 mb-4">Near Jammu Airport, Jammu Kasmir Road
+                                                        </h6>
+                                                        <div class="results-card-right-price d-flex align-items-center">
+                                                            <h2 class="me-3">₹ 549</h2>
+                                                            <h5 class="text-decoration-line-through me-3">₹680</h5>
+                                                            <h5 class="discount">65%off</h5>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <p class="font-12 font-300 mb-0">per room per night</p>
+                                                            <a href="javascript:void(0)" class="btn btn-main">Book
+                                                                Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row justify-content-between bottom-border mb-3 pb-3">
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 mb-3">
+                        <div class="footer-list">
+                            <h6>Title of section</h6>
+                            <ul class="p-0">
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                                <li class="mb-2"><a href="javascript:void(0)" class="footer-list-cta">Page title</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-subscribe">
+                            <h6>Subscribe to Newsletter</h6>
+                            <div class="footer-subscribe-form mb-3">
+                                <label for="subscribeMail" class="form-label">Your email</label>
+                                <div class="footer-subscribe-form-input input-group align-items-center">
+                                    <input type="email" class="form-control" id="subscribeMail"
+                                        aria-describedby="emailHelp">
+                                    <a href="javascript:void(0)" class="d-flex align-items-center"><i
+                                            class="fa-solid fa-paper-plane" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-5 col-sm-6 col-md-3">
+                        <a href="javascript:void(0)"><img src="./images/Hotel&Luxury.svg" alt="hotel & luxury"
+                                class="img-fluid w190" loading="lazy"></a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-xl-2">
+                        <ul class="d-flex justify-content-sm-between justify-content-start footer-social flex-wrap mb-0 p-0">
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-brands fa-instagram"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"><i class="fa-solid fa-paper-plane"
+                                        aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./js/countrySelect.js"></script>
+    <script type="text/javascript" src="./js/moment.min.js"></script>
+    <script type="text/javascript" src="./js/daterange.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+
+
+    <script>
+        // Custom Date Range
+        $(function () {
+            var start = moment().subtract(29, "days");
+            var end = moment();
+            function cb(start, end) {
+                $(".custom-daterange span").html(
+                    start.format("MMM D, YYYY") + " - " + end.format("MMM D, YYYY")
+                );
+            }
+            $(".custom-daterange").daterangepicker(
+                {
+                    opens: "right",
+                    startDate: start,
+                    endDate: end,
+                    ranges: {
+                        Today: [moment(), moment()],
+                        Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+                        "Last 7 Days": [moment().subtract(6, "days"), moment()],
+                        "Last 30 Days": [moment().subtract(29, "days"), moment()],
+                        "Last Month": [
+                            moment().subtract(1, "month").startOf("month"),
+                            moment().subtract(1, "month").endOf("month"),
+                        ],
+                    },
+                },
+                cb
+            );
+            cb(start, end);
+        });
+    </script>
+
+
+</body>
+
+</html>

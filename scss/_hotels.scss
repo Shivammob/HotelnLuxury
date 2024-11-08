@@ -1,0 +1,220 @@
+.ads {
+  &-container {
+    width: 100%;
+    max-width: 691px;
+    padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+
+.results {
+    &-btn {
+        text-wrap: nowrap;
+        overflow: auto;
+        &-cta {
+            display: inline-block;
+            color: $color2;
+            font-size: 12px;
+            font-weight: 600;
+            background: $color-white;
+            border-radius: 20px;
+            padding: 12px 25px;
+            margin: 5px 5px 15px;
+        }
+    }
+    &-card {
+        .card {
+            position: unset;
+        }
+        .notes {
+            position: absolute;
+            top: 7%;
+            left: -1%;
+            display: inline-block;
+            color: $color-white;
+            border-radius: 4px;
+            padding: 8px 9px;
+            &-green {
+                background-color: $color28;
+            }
+            &-orange {
+                background-color: $color27;
+            }
+        }
+       
+        &-left {
+            position: static;
+        }
+        &-right {
+            &-price {
+                h2 {
+                    color: $color21;
+                }
+                h5 {
+                    color: $color26;
+                }
+                h5.discount {
+                    color: $color27;
+                }
+            }
+        }
+    }
+}
+
+
+.destsearch {
+    label {
+        font-size: 11px;
+        color: $color29;
+    }
+    &-input {
+      padding: 10px;
+      border: 1px solid #EEEEEE;
+      background: $color30;
+      border-radius: 6px;
+      i {
+        color: $color19;
+        font-size: 14px;
+        &.fa-angle-down {
+            color: $color31;
+        }
+      }
+      
+      input {
+        font-size: 13px;
+        background: unset;
+        border: unset;
+        padding: 0;
+        &:focus {
+            background: unset;
+            box-shadow: none;
+        }
+      }
+    }
+
+    &-quantity {
+        .destsearchQuantity {
+            position: relative;
+            input {
+                display: block;
+                width: 100%;
+                height: 42px;
+                font-size: 14px;
+                line-height: 1.65;
+                float: left;
+                padding: 0 0 0 20px;
+                margin: 0;
+                border: none;
+                box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08);
+                border-radius: 4px;
+                &:focus {
+                    outline: 0;
+                }
+            }
+            .quantity-nav {
+                float: left;
+                position: relative;
+                height: 42px;
+                .quantity-button {
+                    position: relative;
+                    font-size: 10px;
+                    cursor: pointer;
+                    border: none;
+                    border-left: 1px solid rgba(0, 0, 0, 0.08);
+                    width: 21px;
+                    text-align: center;
+                    color: #333;
+                    font-family: "FontAwesome" !important;
+                    line-height: 1.5;
+                    padding: 0;
+                    background: #FAFAFA;
+                    -webkit-transform: translateX(-100%);
+                    transform: translateX(-100%);
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    -o-user-select: none;
+                    user-select: none;
+                    &:active {
+                        background: #EAEAEA;
+                    }
+                      
+                    &.quantity-up {
+                        position: absolute;
+                        height: 50%;
+                        top: 0;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+                        border-radius: 0 4px 0 0;
+                        line-height: 1.6
+                    }
+                      
+                    &.quantity-down {
+                        position: absolute;
+                        bottom: 0;
+                        height: 50%;
+                        border-radius: 0 0 4px 0;
+                    }
+                }
+            }
+        }
+          
+        //   input[type=number]::-webkit-inner-spin-button,
+        //   input[type=number]::-webkit-outer-spin-button {
+        //     -webkit-appearance: none;
+        //     margin: 0;
+        //   }
+          
+        //   input[type=number] {
+        //     -moz-appearance: textfield;
+        //   }
+        
+    }
+
+    &-star {
+        .form-check {
+            &-input {
+                border: 2px solid $color7;
+                border-radius: 0;
+            }
+        }
+        .stars {
+            color: $color7;
+            font-size: 11px;
+            &-colored {
+                color: $color32;
+            }
+        }
+        span {
+            color: $color33;
+            font-size: 11px;
+        }
+    }
+}
+
+
+
+
+
+.results-btn::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.results-btn::-webkit-scrollbar {
+    height: 10px;
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.results-btn::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #000;
+}
+
+
+
+
